@@ -9,9 +9,9 @@ add_subdirectory(path/to/c-logger)
 target_link_libraries(${PROJECT_NAME} [ ... ] c_logger)
 ```
 
-Optionally you can enable:
+Optionally you can set defines:
 ```cmake
-target_compile_definitions(c_logger PUBLIC DEBUG=ON)
-target_compile_definitions(c_logger PUBLIC LOG_FILE=ON)
-target_compile_definitions(c_logger PUBLIC LOG_SYNC=ON)
+target_compile_definitions(c-logger PUBLIC DEBUG=ON)
+target_compile_definitions(c-logger PUBLIC LOG_FILE=ON)
+target_compile_definitions(c-logger PUBLIC LOG_SYNC=ON)
 ```
